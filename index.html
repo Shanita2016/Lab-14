@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/pets.css">
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  </head>
+  <body ng-app ="myModule">
+    <div id="container">
+      <div id="heading">
+    <h1>Pet Match!</h1>
+  </div>
+    <h3>Click on a page to see our top pets of the week:</h3>
+    <div id="navigation">
+    <a href="#/view1">Marvin</a>
+    <a href="#/view2">Chi-Chi</a>
+    <a href="#/view3">Missy</a>
+    <a href="#/view4">Jewel</a>
+    <br><br>
+  </div>
+
+    <ng-view></ng-view>
+
+    <footer>&copy; 2016 by Shanita Nicole Scott</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="pet.js"></script>
+    <script src="script.js"></script>
+    <script src="control.js"></script>
+
+  </body>
+</html>
